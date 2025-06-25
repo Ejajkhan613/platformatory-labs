@@ -14,9 +14,9 @@ async function connectToDB() {
     try {
         await mongoose.connect(process.env.MONGO_URI || 'mongodb://localhost:27017/temporal');
         isConnected = true;
-        console.log('🟢 Temporal worker connected to MongoDB');
+        console.log('Temporal worker connected to MongoDB');
     } catch (err) {
-        console.error('❌ MongoDB connection failed in Temporal worker:', err);
+        console.error('MongoDB connection failed in Temporal worker:', err);
         throw err;
     }
 }
