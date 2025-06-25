@@ -1,0 +1,7 @@
+body {
+  margin: 0;
+  font-family: Roboto, sans-serif;
+  background: linear-gradient(135deg, #e0f7fa, #f1f8e9);
+  min-height: 100vh;
+  background-attachment: fixed;
+}
